@@ -1,0 +1,3 @@
+# Overfitting
+
+A model overfits when it memorizes noise in the training data instead of learning the underlying pattern. The classic symptom is a large gap between training and validation performance: accuracy is excellent on data the model has seen and poor on new data. Overfitting is more likely with small datasets, very flexible models such as deep trees or large neural networks, and too many features. Common remedies include collecting more data, simplifying the model, adding regularization, using dropout or early stopping, and selecting fewer features. Plotting learning curves for both training and validation error is the quickest way to diagnose it.

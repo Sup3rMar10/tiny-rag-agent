@@ -1,0 +1,3 @@
+# Cross-Validation
+
+Cross-validation estimates how well a model generalizes by repeatedly splitting the data. In k-fold cross-validation the data is divided into k parts. The model trains on k-1 parts and is scored on the remaining part, rotating until every part has been used for validation. The average score is a more stable estimate than a single train/test split. Use stratified folds for imbalanced classification so each fold keeps the class ratio. For time series, use forward-chaining splits so the model never trains on the future. Always fit preprocessing such as scaling inside each fold to avoid data leakage.

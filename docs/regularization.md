@@ -1,0 +1,3 @@
+# Regularization
+
+Regularization discourages overly complex models by adding a penalty to the training objective. L2 regularization, also called ridge, penalizes the squared size of the weights and shrinks them smoothly toward zero. L1 regularization, also called lasso, penalizes the absolute size of the weights and can drive some of them exactly to zero, which performs feature selection. A strength hyperparameter, often called alpha or lambda, controls the trade-off: too little leaves the model free to overfit, while too much causes underfitting. Tune it with cross-validation. Dropout and early stopping act as regularizers for neural networks.
